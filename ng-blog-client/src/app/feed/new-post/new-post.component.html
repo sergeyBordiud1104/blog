@@ -1,0 +1,28 @@
+<div class="form-new-post">
+  <form [formGroup]="form" (ngSubmit)="createPost()">
+    <div class="post-group">
+      <span>Post name</span>
+      <input type="text" formControlName="title" placeholder="Enter the name of the post">
+    </div>
+    <div class="post-group">
+      <span>Author</span>
+      <input type="text" formControlName="author" placeholder="Enter your name">
+    </div>
+    <div class="post-group">
+      <span>Image</span>
+      <input type="text" formControlName="image" placeholder="Enter the image URL">
+    </div>
+    <div class="post-group">
+      <span>Description</span>
+      <textarea formControlName="description" placeholder="Enter the description of the post" cols="30"
+                rows="10"></textarea>
+    </div>
+    <div class="post-group">
+      <span>Content</span>
+      <textarea formControlName="content" placeholder="Enter the text of the post" cols="30" rows="10"></textarea>
+    </div>
+    <div class="post-group">
+      <button type="submit" name="submit" class="btn">Create new post</button>
+    </div>
+  </form>
+</div>

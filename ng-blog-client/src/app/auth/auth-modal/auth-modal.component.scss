@@ -1,0 +1,11 @@
+@import '../../shared/ui/styles.scss';
+
+.auth-modal {
+  mat-dialog-container {
+    border-radius: 8px;
+  }
+
+  .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+    color: $default-text-color;
+  }
+}

@@ -1,0 +1,26 @@
+@import "../../shared/ui/styles.scss";
+
+.card {
+  margin: 4rem auto;
+  .card-button {
+    font-size: 1.1em;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    font-weight: 600;
+    line-height: 1.6;
+    letter-spacing: 0.01rem;
+    color: white;
+    background-color: $accent-color;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .delete-button {
+    float: right;
+    border: none;
+  }
+}
+
+.message {
+  font-size: 18px;
+}

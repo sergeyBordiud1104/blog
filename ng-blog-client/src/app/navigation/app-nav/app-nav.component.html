@@ -1,0 +1,10 @@
+<mat-sidenav-container class="app-nav">
+  <mat-sidenav mode="side" opened class="wrapper">
+    <a routerLink="posts" routerLinkActive="active">Home</a>
+    <a routerLink="posts/new-post" routerLinkActive="active" *ngIf="user">New post</a>
+    <a routerLink="about" routerLinkActive="active">About</a>
+  </mat-sidenav>
+  <mat-sidenav-content class="content">
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>

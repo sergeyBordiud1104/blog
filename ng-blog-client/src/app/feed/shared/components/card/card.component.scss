@@ -1,0 +1,10 @@
+@import "../../../../shared/ui/styles.scss";
+
+.post-description {
+  max-height: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+mat-card-actions {
+  margin-left: auto;
+}

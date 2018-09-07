@@ -1,0 +1,35 @@
+@import "../../shared/ui/styles.scss";
+
+.form-new-post {
+  form {
+    .post-group {
+      span {
+        display: block;
+        color: rgba(0,0,0,.87);
+        margin-bottom: 5px;
+        margin-top: 10px;
+        font-size: 18px;
+      }
+      input, textarea {
+        padding: 10px;
+        width: 90%;
+        border: solid 1px #ccc;
+        border-radius: 5px;
+        resize:none;
+        font-family: 'Open Sans', sans-serif;
+      }
+      .btn {
+        margin: 10px 0;
+        width: 200px;
+        border: solid 1px #da4a53;
+        border-radius: 5px;
+        background-color: #da4a53;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        min-height: 60px;
+        font-size: 16px;
+      }
+    }
+  }
+}

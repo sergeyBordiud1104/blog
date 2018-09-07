@@ -1,0 +1,6 @@
+<app-header [user]="user$ | async" (logout)="onLogout()"></app-header>
+<app-nav [user]="user$ | async">
+  <div class="wrapper">
+    <router-outlet></router-outlet>
+  </div>
+</app-nav>

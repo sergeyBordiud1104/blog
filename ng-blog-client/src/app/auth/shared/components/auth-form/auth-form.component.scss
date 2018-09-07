@@ -1,0 +1,50 @@
+@import '../../../../shared/ui/styles.scss';
+
+:host ::ng-deep {
+  button {
+    margin: 10px 0;
+    width: 100%;
+    background-color: $accent-color;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    min-height: 60px;
+    font-size: 16px;
+  }
+  img {
+    height: 250px;
+  }
+  p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    color: $default-text-color;
+  }
+}
+
+.auth-form {
+  .form-field {
+    width: 100%;
+  }
+  .toggle {
+    text-align: center;
+    margin-bottom: 10px;
+    a {
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0 10px;
+      color: $default-text-color;
+      padding-bottom: 2px;
+      outline: none;
+      &.active-link {
+        border-bottom: 4px solid $accent-color;
+      }
+    }
+  }
+  .image-wrapper {
+    margin-top: 25px;
+    text-align: center;
+  }
+}

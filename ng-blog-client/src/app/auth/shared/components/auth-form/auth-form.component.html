@@ -1,0 +1,24 @@
+<div class="auth-form">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="toggle">
+      <a [routerLink]="['', { outlets: { auth: ['login'] } }]" routerLinkActive="active-link">Sign In</a>
+      <a [routerLink]="['', { outlets: { auth: ['register'] } }]" routerLinkActive="active-link">Sign Up</a>
+    </div>
+    <div class="image-wrapper">
+      <ng-content select="img"></ng-content>
+    </div>
+    <ng-content select="p"></ng-content>
+    <mat-form-field class="form-field" appearance="outline">
+      <input matInput type="email" placeholder="Email address" formControlName="email">
+      <mat-error *ngIf="emailFormat">Invalid email format</mat-error>
+    </mat-form-field>
+    <mat-form-field class="form-field" appearance="outline">
+      <input matInput type="password" placeholder="Enter password" formControlName="password">
+      <mat-error *ngIf="passwordInvalid">Password is required</mat-error>
+    </mat-form-field>
+    <ng-content select=".error"></ng-content>
+    <div class="action">
+      <ng-content select="button"></ng-content>
+    </div>
+  </form>
+</div>

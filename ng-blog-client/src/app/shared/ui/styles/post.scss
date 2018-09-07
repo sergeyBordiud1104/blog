@@ -1,0 +1,32 @@
+@import "_style-variables.scss";
+
+.post {
+  color: $default-text-color;
+  .post-title {
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: -2px;
+    text-indent: -3px;
+    line-height: 1.2;
+  }
+
+  .post-image {
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
+
+  .written-by {
+    color: $accent-color;
+    font-size: 1.7rem;
+    margin: 20px 0;
+  }
+
+  .post-content, .post-description {
+    font-size: 1.5em;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    font-weight: 300;
+    line-height: 1.6;
+    letter-spacing: 0.01rem;
+  }
+}

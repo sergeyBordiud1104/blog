@@ -1,0 +1,8 @@
+<div class="toolbar-wrapper">
+  <mat-toolbar class="toolbar">
+    <img src="../../../assets/images/logo.svg" alt="" class="logo" routerLink="/">
+    <span class="fill-remaining-space"></span>
+    <a class="auth-link" (click)="openDialog()" *ngIf="!user">Sign In</a>
+    <a class="auth-link" (click)="logoutUser()" *ngIf="user">Logout</a>
+  </mat-toolbar>
+</div>

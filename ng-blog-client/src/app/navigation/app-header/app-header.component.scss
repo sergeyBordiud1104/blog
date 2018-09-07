@@ -1,0 +1,32 @@
+@import "../../shared/ui/styles";
+
+.toolbar-wrapper {
+  padding: 8px;
+  .toolbar {
+    background-color: #fff;
+    .logo {
+      height: auto;
+      width: 145px;
+      margin-left: $navbar-width;
+      cursor: pointer;
+      outline: none;
+    }
+    .fill-remaining-space {
+      flex: 1 1 auto;
+    }
+    .auth-link {
+      cursor: pointer;
+      margin-right: $navbar-width;
+      color: #422e3e;
+      font-weight: 500;
+      font-size: 16px;
+      text-transform: uppercase;
+      border-bottom: 3px solid transparent;
+      &:hover,
+      &.active {
+        color: $accent-color;
+        border-bottom-color: $accent-color;
+      }
+    }
+  }
+}
